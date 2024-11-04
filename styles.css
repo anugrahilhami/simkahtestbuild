@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-    max-width: 600px;
     width: 100%; /* Make container take full width on smaller screens */
     background-color: #fff;
     padding: 20px;
