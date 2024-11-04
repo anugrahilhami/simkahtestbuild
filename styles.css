@@ -10,11 +10,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10px; /* Added padding to prevent content from touching screen edges */
 }
 
 .container {
     max-width: 600px;
+    width: 100%; /* Make container take full width on smaller screens */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -92,8 +94,22 @@ hr {
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .download-button:hover {
     background-color: #45a049;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Adjust heading font size for mobile */
+    }
+    
+    .survey-link a {
+        font-size: 13px; /* Slightly smaller text on smaller screens */
+    }
+
+    .info-section, .section p {
+        font-size: 13px; /* Make text slightly smaller 
